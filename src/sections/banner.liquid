@@ -1,0 +1,27 @@
+<div class="banner-section">
+ 		<div class="container">
+ 			<div class="banner-grid">
+ 				<div class="col-md-6 banner-grid">
+					<h2>the latest collections</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<a href="products.html" class="button"> shop now </a>
+				</div><!-- End col md 6 -->
+				<div class="col-md-6 banner-grid1">
+					{{ "p2.png" | asset_url | img_tag: "Main Logo" }}
+				</div>
+ 			</div>
+ 		</div>		
+ 	</div>
+ 	<!-- ENd Start banner -->	
+{% schema %}
+	{
+		"name": "banner",
+
+		"presets": [
+			{
+				"name": "banner",
+				"category": "Homepage"
+			}
+		]
+	}
+{% endschema %}
