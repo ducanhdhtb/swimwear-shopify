@@ -1,0 +1,66 @@
+/* Start subcribe */
+.subscribe {
+    background: #eee;
+    text-align: center;
+    padding: 2em 0;
+    border-top: 1px solid#CCC0C0;
+    border-bottom: 1px solid#CCC0C0;
+    margin-top: 3em;
+}
+
+.subscribe1 h4{
+    color: #000;
+    padding-top: 0.2em;
+    margin: 0;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.subscribe2 form input[type="text"] {
+    border: 1px solid #DCDADA;
+    outline: 0;
+    width: 70%;
+    font-size: 1em;
+    padding: 0.68em 1em;
+    color: #7D7D7D;
+}
+.subscribe2 form input[type="submit"] {
+    outline: none;
+    border: 2px solid #000;
+    width: 20%;
+    padding: 0.55em;
+    background: none;
+    margin-left: 1em;
+    color: #000;
+    font-weight: 600;
+}
+/* ENd Start subcribe */
+@media screen and (max-width:600px){
+    .subscribe2 form input[type="submit"] {
+        outline: none;
+        border: 1px solid grey;
+        width: 20%;
+        padding: 0.55em;
+        background: none;
+        margin-left: 0.3em;
+        color: #000;
+        font-weight: 600;
+    }
+    .subscribe1 h4 {
+        color: #000;
+        padding-top: 0.2em;
+        margin: 0;
+        font-size: 1.3em;
+        text-transform: capitalize;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .subscribe {
+        background: #eee;
+        text-align: center;
+        padding: 1.2em 0;
+        border-top: 1px solid #ccc0c0;
+        border-bottom: 1px solid #ccc0c0;
+        margin-top: 3em;
+    }
+}

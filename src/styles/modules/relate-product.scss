@@ -1,0 +1,112 @@
+/* Css for relate product */
+.relate_product {
+    width: 60%;
+    margin: 0px auto;
+    padding:1em 0;
+}
+.relate_product h3 {
+    text-align: center;
+}
+.product {
+    width: 100%;
+}
+
+.product-item:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+.product-item {
+    width: 25%;
+    background: transparent;
+    text-align: center;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+    height: 400px;
+}
+.product-item:hover .add-item{
+    transform: translateX(55px);
+    background-color: #33333359;
+}
+.add-item {
+    width: 50%;
+    background: #33333359;
+    padding: 0em;
+    position: absolute;
+    top: 140px;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    transform: translateX(-285px);
+    transition: 0.4s;
+}
+
+.product-item .product-info .name{
+    color: #caccce;
+    font-size: 0.95em;
+    font-family: 'Dosis-Bold';
+    text-transform: uppercase;
+}
+.product-img{
+    padding:2em;
+}
+.product-item .product-info .price{
+    color: #000;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 10px 0 5px;
+    display: block;
+}
+.product-item .product-info .pric1{
+    color: #ADADAD;
+    font-size: 0.95em;
+    display: inline-block;
+    text-decoration: line-through;
+}
+.product-item .product-info .disc{
+    color: rgba(7, 152, 40, 0.69);
+    font-size: 0.85em;
+    display: inline-block;
+}
+@media screen and (max-width:600px){
+    .product-item {
+        width: 50%;
+        background: transparent;
+        text-align: center;
+        float: left;
+        transition: 0.4s;
+        height: 340px;
+    }
+    .product {
+        width: 100%;
+        padding: 0px;
+    }
+    .relate_product {
+        width: 100%;
+        margin: 0px auto;
+        padding: 2em 0;
+    }
+    .product-img {
+    padding: 1em;
+    }
+    .add-item {
+        width: 50%;
+        background: #33333359;
+        padding: 0em;
+        position: absolute;
+        top: 100px;
+        color: white;
+        font-size: 28px;
+        text-align: center;
+        transform: translateX(-285px);
+        transition: 0.4s;
+    }
+    .product-item:hover{
+        border:1px solid grey;
+        cursor: pointer;
+    }
+    
+}
+
+/* ENd Css for relate product */

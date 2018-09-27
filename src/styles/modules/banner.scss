@@ -37,6 +37,21 @@
         width:100%;
         min-height:300px;
     }
-    
+    .banner-section {
+        text-align: center;
+        padding-top: 0em; 
+    }
+    .banner-section .col-md-6.banner-grid {
+        padding-top: 0%;
+    }
+    .headerbottom {
+        min-height: 50px;
+    }
+    ul.nav.navbar-nav.nav-center {
+        margin-top: 6px;
+        width: 100%;
+        background: #ebeef008;
+        margin: 0px auto;
+    }
 }
 /* End banner */

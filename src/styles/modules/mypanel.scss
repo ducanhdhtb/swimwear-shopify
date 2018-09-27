@@ -1,0 +1,35 @@
+/* Css for mypanel row 2 */
+.myPanel {
+    padding: 5em 0em;
+}
+.my-panel-title {
+    width: 100%;
+    background: black;
+    padding: 1em 0em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-indent: 2em;
+}
+.my-panel-title:hover{
+    cursor: pointer;
+}
+.my-panel-content {
+    padding: 2em;
+    color: grey;
+    border: 1px solid #8080806b;
+    text-indent: 0em;
+    width: 100%;
+}
+.myPanel-item {
+    margin-bottom: 10px;
+}
+@media screen and (max-width:600px){
+    .myPanel-item {
+        margin-bottom: 10px;
+    }  
+    .myPanel {
+        padding: 1em 0em;
+    }
+}
+/* End Css for mypanel */

@@ -1,0 +1,67 @@
+<!-- Start gallery -->
+	<div class="gallery">
+	   <div class="container">
+	        {%- assign collection = collections[section.settings.collection] -%}
+	      	<h3 class="text-center">{{ section.settings.title }}</h3>
+	      	<div class="gallery-grids">  
+				{% for product in collection.products limit: 8 %}
+					<div class="col-xs-6 col-sm-6  col-md-3 gallery-grid ">
+			            <a href="{{ product.url | within: collection }}">
+			               	{% if product.featured_image != blank %}
+	      						{{ product.featured_image.src | img_url: '480x480' | img_tag: product.title }}
+	    					{% endif %}
+			               <div class="gallery-info">
+			                  <div class="quick">
+			                     <p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
+			                  </div>
+			               </div>
+			            </a>
+			            <div class="galy-info">
+			               <p>{{ product.title }}</p>
+			               <div class="galry">
+			                  <div class="prices">
+			                     <h5 class="item_price">{{ product.price | money }}</h5>
+			                  </div>
+			                  <div class="rating">
+			                     <span>☆</span>
+			                     <span>☆</span>
+			                     <span>☆</span>
+			                     <span>☆</span>
+			                     <span>☆</span>
+			                  </div>
+			                  <div class="clearfix"></div>
+			               </div>
+			            </div>
+		         	</div>
+	         <!-- End 1 col -->		
+			{% endfor %}		
+
+	      </div>
+	   </div>
+	</div>
+	<!-- End Start gallery -->
+{% schema %}
+  {
+    "name": "My Featured collection",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Featured collection"
+      },
+      {
+        "id": "collection",
+        "type": "collection",
+        "label": "Collection"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured collection",
+        "category": "Collection"
+      }
+    ]
+  }
+
+{% endschema %}
